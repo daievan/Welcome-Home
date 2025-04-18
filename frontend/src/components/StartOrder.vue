@@ -12,7 +12,6 @@
       <label>Order Notes</label>
       <textarea rows="3" v-model="order_notes" />
 
-      <!-- 空占位使按钮与输入框对齐到右侧 -->
       <div></div>
       <button type="submit" class="primary-btn">Start Order</button>
     </form>

@@ -149,13 +149,11 @@ def accept_donation():
         )
         item_id = cursor.lastrowid
 
-        # 插入 DonatedBy
         cursor.execute(
             'INSERT INTO DonatedBy (ItemID, userName, donateDate) VALUES (%s, %s, %s)',
             (item_id, donor_id, donation_date)
         )
 
-        # 插入 Piece（如果有）
         for i, piece in enumerate(pieces, start=1):
             cursor.execute(
                 '''

@@ -26,7 +26,6 @@ def create_app():
     login_manager.init_app(app)
     init_auth_routes(app,login_manager)  
 
-    # 前端 vue 静态路由兜底
     @app.route('/')
     @app.route('/<path:path>')
     def index(path=None):
