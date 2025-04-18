@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Flask/instance config
+instance/
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets & environment
+.env
+.DS_Store
+
+# Logs
+*.log
+
+# OS or editor-specific
+*.swp
+*.swo
+.idea/
+.vscode/
